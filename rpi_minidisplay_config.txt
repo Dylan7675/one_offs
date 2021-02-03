@@ -1,0 +1,9 @@
+hdmi_force_hotplug=1
+config_hdmi_boost=7
+hdmi_group=2
+hdmi_mode=1
+hdmi_mode=87
+hdmi_drive=1 
+hdmi_cvt 800 480 60 6 0 0 0
+start_x=1
+gpu_mem=128
