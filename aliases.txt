@@ -1,0 +1,21 @@
+# aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias grep='grep --color=auto --exclude-dir=\.svn'
+alias ..='cd ..'
+alias push='git push'
+alias pull='git pull'
+alias clone='clone'
+alias c='clear'
+alias untar='tar -zxvf'
+alias hs='history | grep'
+alias movies='move_movies.sh'
+
+function cd() {
+    new_directory="$*";
+    if [ $# -eq 0 ]; then 
+        new_directory=${HOME};
+    fi;
+    builtin cd "${new_directory}" && ls
+}
