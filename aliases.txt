@@ -6,11 +6,12 @@ alias grep='grep --color=auto --exclude-dir=\.svn'
 alias ..='cd ..'
 alias push='git push'
 alias pull='git pull'
-alias clone='clone'
+alias clone='git clone'
 alias c='clear'
 alias untar='tar -zxvf'
 alias hs='history | grep'
-alias movies='move_movies.sh'
+alias bashrc='. ~/.bashrc'
+alias profile='nano ~/.bashrc'
 
 function cd() {
     new_directory="$*";
