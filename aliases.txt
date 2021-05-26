@@ -20,3 +20,7 @@ function cd() {
     fi;
     builtin cd "${new_directory}" && ls
 }
+
+function cheat() {
+    clear && curl cheat.sh/"$1" ;
+}
